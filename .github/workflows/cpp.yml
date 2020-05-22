@@ -18,5 +18,9 @@ jobs:
         apt install libeigen3-dev
         apt install libgeos++-dev
         apt-get install libcgal-dev
+    - name: Build
+      run: |
+        mkdir build && cd build
+        cmake ..
     - name: make
       run: make
