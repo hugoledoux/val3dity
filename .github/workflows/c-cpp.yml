@@ -15,9 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: install dependencies
       run: |
-        apt install libeigen3-dev
-        apt install libgeos++-dev
-        apt-get install libcgal-dev
+        sudo apt-get install libeigen3-dev
+        sudo apt-get install libgeos++-dev
+        sudo apt-get install libcgal-dev
     - name: Build
       run: |
         mkdir build && cd build
